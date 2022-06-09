@@ -5,9 +5,9 @@ const fetch = require("cross-fetch");
 /* GET Dyno Web App external ip address. */
 router.get("/", async function (req, res, next) {
 	const url = "https://api.ipify.org?format=json";
-	const myHost = "infinite-peak-24830.herokuapp.com";
-    console.log(req.socket.remoteAddress)
-    console.log(req.socket.localAddress)
+	const myHost = "obscure-cliffs-03067.herokuapp.com";
+	console.log(req.socket.remoteAddress);
+	console.log(req.socket.localAddress);
 	fetch(url)
 		.then((response) => response.json())
 		.then((data) => {
