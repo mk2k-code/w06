@@ -108,6 +108,7 @@ const users = {
 			password: newPassword,
 		});
 		// console.log(user);
+		jwtToken(user, 200, res);
 	},
 };
 
